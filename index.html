@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Binomo Today!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1569025695911-2d92a225a909?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%; width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 50px 40px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      max-width: 420px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+      color: #fff200;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 20px;
+      color: #eee;
+    }
+
+    .cta-button {
+      background-color: #fff200;
+      color: #000;
+      padding: 14px 28px;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      display: inline-block;
+      margin: 20px 0;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .countdown {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #ff8080;
+    }
+
+    .referrals {
+      font-size: 15px;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social a {
+      margin: 0 8px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      transition: transform 0.2s;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+      color: #fff200;
+    }
+
+    @media (max-width: 500px) {
+      .container {
+        margin: 0 20px;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+  <script>
+    // Countdown Timer (3 days from now)
+    document.addEventListener('DOMContentLoaded', function () {
+      const endDate = new Date();
+      endDate.setDate(endDate.getDate() + 3);
+      const timer = document.getElementById('timer');
+
+      function updateCountdown() {
+        const now = new Date();
+        const diff = endDate - now;
+
+        if (diff <= 0) {
+          timer.innerHTML = "Offer expired!";
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / (1000 * 60)) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        timer.innerHTML = `🎁 Offer ends in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+    });
+  </script>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Start Trading with Binomo</h1>
+    <p>Sign up through this exclusive invite and claim your bonus!</p>
+
+    <div class="countdown" id="timer">Loading countdown...</div>
+
+    <div class="referrals">🔥 Already 217 people signed up this week</div>
+
+    <a class="cta-button" href="https://binomo-invitefriend.com/auth?invite_code=c9c18980e8f89e31c327198b82439b4a#SignUp" target="_blank">
+      Sign Up Free
+    </a>
+
+    <div class="social">
+      <span>📢 Share:</span>
+      <a href="https://facebook.com/sharer/sharer.php?u=https://binomo-invitefriend.com/auth?invite_code=c9c18980e8f89e31c327198b82439b4a" target="_blank">Facebook</a>
+      <a href="https://twitter.com/intent/tweet?text=Join%20Binomo%20with%20this%20invite!&url=https://binomo-invitefriend.com/auth?invite_code=c9c18980e8f89e31c327198b82439b4a" target="_blank">Twitter</a>
+      <a href="https://wa.me/?text=Join%20Binomo%20with%20this%20invite:%20https://binomo-invitefriend.com/auth?invite_code=c9c18980e8f89e31c327198b82439b4a" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
